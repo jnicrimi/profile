@@ -27,6 +27,10 @@ run = "pnpm build"
 description = "プレビューを実行"
 run = "trap 'exit 0' INT TERM; pnpm exec astro preview"
 
+[tasks.deploy]
+description = "デプロイ"
+run = "pnpm run deploy"
+
 [tasks.lint]
 description = "Lint・整形の確認"
 run = "pnpm lint"
