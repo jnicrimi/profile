@@ -14,3 +14,28 @@ run = ["mise install", "lefthook install", "pnpm install --frozen-lockfile"]
 description = "YAML を検証"
 raw_args = true
 run = "uvx --python-preference only-managed yamllint==1.38.0"
+
+[tasks.dev]
+description = "開発サーバを起動"
+run = "trap 'exit 0' INT TERM; pnpm exec astro dev"
+
+[tasks.build]
+description = "ビルドを実行"
+run = "pnpm build"
+
+[tasks.preview]
+description = "プレビューを実行"
+run = "trap 'exit 0' INT TERM; pnpm exec astro preview"
+
+[tasks.lint]
+description = "Lint・整形の確認"
+run = "pnpm lint"
+
+[tasks.fix]
+description = "Lint・整形の修正"
+run = "pnpm fix"
+
+[tasks.astro]
+description = "Astro CLI を実行"
+raw_args = true
+run = "pnpm astro"
