@@ -1,5 +1,27 @@
 ---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import profileImage from "../assets/profile.png";
 import "../styles/global.css";
+
+const snsLinks = [
+  {
+    name: "GitHub",
+    icon: "simple-icons:github",
+    href: "https://github.com/jnicrimi",
+  },
+  {
+    name: "Facebook",
+    icon: "simple-icons:facebook",
+    href: "https://www.facebook.com/jnicrimi",
+  },
+  { name: "X", icon: "simple-icons:x", href: "https://x.com/imai" },
+  {
+    name: "Instagram",
+    icon: "simple-icons:instagram",
+    href: "https://www.instagram.com/jnicrimi",
+  },
+];
 ---
 
 <!doctype html>
@@ -10,8 +32,34 @@ import "../styles/global.css";
     <title>jnicrimi.com</title>
   </head>
   <body class="bg-neutral-50 text-neutral-900">
-    <main class="flex min-h-dvh items-center justify-center">
+    <main class="flex min-h-dvh flex-col items-center justify-center gap-4">
+      <Image
+        src={profileImage}
+        alt="jnicrimi"
+        width={160}
+        densities={[1, 2]}
+        class="rounded-full"
+      />
       <h1 class="text-2xl font-bold">jnicrimi.com</h1>
+      <nav aria-label="SNS">
+        <ul class="flex gap-5">
+          {
+            snsLinks.map((sns) => (
+              <li>
+                <a
+                  href={sns.href}
+                  aria-label={sns.name}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-neutral-500 transition-colors hover:text-neutral-900"
+                >
+                  <Icon name={sns.icon} class="size-6" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
     </main>
   </body>
 </html>
