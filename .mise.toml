@@ -43,6 +43,10 @@ run = "pnpm fix"
 description = "型チェックを実行"
 run = "pnpm typecheck"
 
+[tasks.knip]
+description = "未使用コードを検出"
+run = "pnpm exec knip"
+
 [tasks.astro]
 description = "Astro CLI を実行"
 raw_args = true
