@@ -39,6 +39,10 @@ run = "pnpm lint"
 description = "Lint・整形の修正"
 run = "pnpm fix"
 
+[tasks.typecheck]
+description = "型チェックを実行"
+run = "pnpm typecheck"
+
 [tasks.astro]
 description = "Astro CLI を実行"
 raw_args = true
