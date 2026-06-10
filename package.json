@@ -11,9 +11,11 @@
     "astro": "astro",
     "lint": "biome check",
     "fix": "biome check --write",
+    "typecheck": "astro check",
     "deploy": "wrangler pages deploy"
   },
   "devDependencies": {
+    "@astrojs/check": "0.9.9",
     "@biomejs/biome": "2.4.16",
     "@commitlint/cli": "21.0.2",
     "@commitlint/config-conventional": "21.0.2",
@@ -21,6 +23,7 @@
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
     "markdownlint-cli2": "0.22.1",
+    "typescript": "6.0.3",
     "wrangler": "4.98.0"
   },
   "dependencies": {
