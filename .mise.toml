@@ -25,12 +25,10 @@ run = "pnpm build"
 
 [tasks.preview]
 description = "プレビューを実行"
-depends = ["build"]
 run = "trap 'exit 0' INT TERM; pnpm exec astro preview"
 
 [tasks.deploy]
 description = "デプロイ"
-depends = ["build"]
 run = "pnpm run deploy"
 
 [tasks.lint]
