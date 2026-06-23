@@ -27,10 +27,10 @@
     "astro-icon": "1.1.5",
     "knip": "6.17.1",
     "markdownlint-cli2": "0.22.1",
-    "sharp": "0.35.1",
+    "sharp": "0.35.2",
     "tailwindcss": "4.3.1",
     "typescript": "6.0.3",
-    "wrangler": "4.102.0"
+    "wrangler": "4.103.0"
   },
   "dependencies": {
     "@astrojs/react": "5.0.7",
