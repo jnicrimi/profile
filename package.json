@@ -16,9 +16,9 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.9",
-    "@biomejs/biome": "2.5.0",
-    "@commitlint/cli": "21.0.2",
-    "@commitlint/config-conventional": "21.0.2",
+    "@biomejs/biome": "2.5.1",
+    "@commitlint/cli": "21.1.0",
+    "@commitlint/config-conventional": "21.1.0",
     "@iconify-json/simple-icons": "1.2.87",
     "@tailwindcss/vite": "4.3.1",
     "@taplo/cli": "0.7.0",
@@ -30,7 +30,7 @@
     "sharp": "0.35.2",
     "tailwindcss": "4.3.1",
     "typescript": "6.0.3",
-    "wrangler": "4.103.0"
+    "wrangler": "4.104.0"
   },
   "dependencies": {
     "@astrojs/react": "5.0.7",
