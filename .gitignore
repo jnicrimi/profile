@@ -6,3 +6,10 @@ node_modules/
 
 # Claude Code
 **/.claude/settings.local.json
+
+# Astro
+dist/
+.astro/
+
+# Cloudflare / Wrangler
+.wrangler/
