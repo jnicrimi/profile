@@ -1,0 +1,74 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import profileImage from "../assets/profile.png";
+import "../styles/global.css";
+
+const snsLinks = [
+  {
+    name: "GitHub",
+    icon: "simple-icons:github",
+    href: "https://github.com/jnicrimi",
+  },
+  {
+    name: "Facebook",
+    icon: "simple-icons:facebook",
+    href: "https://www.facebook.com/jnicrimi",
+  },
+  { name: "X", icon: "simple-icons:x", href: "https://x.com/imai" },
+  {
+    name: "Instagram",
+    icon: "simple-icons:instagram",
+    href: "https://www.instagram.com/jnicrimi",
+  },
+];
+
+const ogImageURL = new URL(profileImage.src, Astro.site);
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jnicrimi.com</title>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <meta property="og:title" content="jnicrimi.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.site} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body class="bg-neutral-50 text-neutral-900">
+    <main class="flex min-h-dvh flex-col items-center justify-center gap-4">
+      <Image
+        src={profileImage}
+        alt="jnicrimi"
+        width={160}
+        densities={[1, 2]}
+        class="rounded-full"
+      />
+      <h1 class="text-2xl font-bold">jnicrimi.com</h1>
+      <nav aria-label="SNS">
+        <ul class="flex gap-5">
+          {
+            snsLinks.map((sns) => (
+              <li>
+                <a
+                  href={sns.href}
+                  aria-label={sns.name}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-neutral-500 transition-colors hover:text-neutral-900"
+                >
+                  <Icon name={sns.icon} class="size-6" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>
