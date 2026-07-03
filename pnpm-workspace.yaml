@@ -1,2 +1,6 @@
 saveExact: true
 minimumReleaseAge: 1440
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true
