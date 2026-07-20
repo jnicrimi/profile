@@ -28,6 +28,11 @@
       "matchDepNames": ["@biomejs/biome"],
       "groupName": "biome",
       "groupSlug": "biome"
+    },
+    {
+      "description": "Astro が TypeScript 7 の Language Service API に未対応なので一時的に除外。",
+      "matchDepNames": ["typescript"],
+      "allowedVersions": "<7"
     }
   ],
   "customManagers": [
