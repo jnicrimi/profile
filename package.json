@@ -30,11 +30,11 @@
     "sharp": "0.35.3",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
-    "wrangler": "4.111.0"
+    "wrangler": "4.112.0"
   },
   "dependencies": {
     "@astrojs/react": "6.0.1",
-    "astro": "7.1.0",
+    "astro": "7.1.1",
     "react": "19.2.7",
     "react-dom": "19.2.7"
   }
