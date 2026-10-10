@@ -19,21 +19,21 @@
     "@biomejs/biome": "2.5.15",
     "@commitlint/cli": "21.2.3",
     "@commitlint/config-conventional": "21.2.3",
-    "@iconify-json/simple-icons": "1.2.98",
+    "@iconify-json/simple-icons": "1.2.99",
     "@tailwindcss/vite": "4.3.3",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "astro-icon": "1.2.0",
-    "knip": "6.38.0",
+    "knip": "6.40.0",
     "markdownlint-cli2": "0.23.3",
     "sharp": "0.35.5",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
-    "wrangler": "4.144.0"
+    "wrangler": "4.148.0"
   },
   "dependencies": {
-    "@astrojs/react": "7.0.0",
-    "astro": "7.3.5",
+    "@astrojs/react": "7.0.1",
+    "astro": "7.3.6",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   }
