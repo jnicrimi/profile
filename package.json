@@ -15,26 +15,26 @@
     "deploy": "wrangler pages deploy"
   },
   "devDependencies": {
-    "@astrojs/check": "0.9.10",
+    "@astrojs/check": "0.9.11",
     "@biomejs/biome": "2.5.15",
-    "@commitlint/cli": "21.2.3",
-    "@commitlint/config-conventional": "21.2.3",
+    "@commitlint/cli": "21.2.4",
+    "@commitlint/config-conventional": "21.2.4",
     "@iconify-json/simple-icons": "1.2.100",
     "@tailwindcss/vite": "4.3.3",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "astro-icon": "1.2.0",
-    "knip": "6.41.0",
+    "knip": "6.42.1",
     "markdownlint-cli2": "0.23.3",
     "sharp": "0.35.5",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
-    "wrangler": "4.150.0"
+    "wrangler": "4.151.3"
   },
   "dependencies": {
-    "@astrojs/react": "7.0.1",
-    "astro": "7.3.8",
-    "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "@astrojs/react": "7.1.0",
+    "astro": "7.4.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
   }
 }
